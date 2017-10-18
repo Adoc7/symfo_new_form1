@@ -7,6 +7,9 @@
 <hr>
 
 {% for article in articles %}
+
+        {#<img src="{{ vich_uploader_asset(article.image, 'file') }}" />#}
+    {#{{ vich_uploader_asset(devis, 'devisFile') }}"#}
         <p> Image : {{ article.image }}</p>
         <h3>{{ article.titre }}</h3>
         <p>Article : {{ article.article }}</p>

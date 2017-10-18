@@ -25,6 +25,8 @@ class DefaultController extends Controller
 
         $form = $this->createFormBuilder($article)
             ->add('image', FileType::class, array('label' => "Image"))
+//            ->add('image', FileType::class, array('label' => "Image"))
+//            ->add('image', 'file')
             ->add('titre', TextType::class, array('label' => "Titre"))
             ->add('article', TextareaType::class, array('label' => "Article"))
             ->add('auteur', TextType::class, array('label' => "Auteur"))

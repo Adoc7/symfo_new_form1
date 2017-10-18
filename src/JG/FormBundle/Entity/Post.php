@@ -1,6 +1,7 @@
 <?php
 
 namespace JG\FormBundle\Entity;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -28,11 +29,27 @@ class Post
      */
     private $image;
 
+
+
+    /**
+     * @Vich\UploadableField(mapping="product_images", fileNameProperty="image")
+     * @var File
+     */
+    private $imageFile;
+
+//    /**
+//     * @ORM\Column(type="datetime")
+//     * @var \DateTime
+//     */
+//    private $updatedAt;
+
     /**
      * @var string
      *
      * @ORM\Column(name="titre", type="string", length=255)
      */
+
+
     private $titre;
 
 
@@ -69,30 +86,50 @@ class Post
         return $this->id;
     }
 
-    /**
-     * Set image
-     *
-     * @param string $image
-     *
-     * @return Post
-     */
+    public function setImageFile(File $image = null)
+    {
+        $this->imageFile = $image;
+
+        // VERY IMPORTANT:
+        // It is required that at least one field changes if you are using Doctrine,
+        // otherwise the event listeners won't be called and the file is lost
+//        if ($image) {
+//            // if 'updatedAt' is not defined in your entity, use another property
+//            $this->updatedAt = new \DateTimeImmutable('today');
+//            return $this;
+//        }
+    }
+
+
+//    /**
+//     * Set image
+//     *
+//     * @param string $image
+//     *
+//     * @return Post
+//     */
     public function setImage($image)
     {
         $this->image = $image;
 
         return $this;
     }
-
-    /**
-     * Get image
-     *
-     * @return string
-     */
+//
+//    /**
+//     * Get image
+//     *
+//     * @return string
+//     */
     public function getImage()
     {
         return $this->image;
     }
-//////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////
+
     /**
      * Set titre
      *
