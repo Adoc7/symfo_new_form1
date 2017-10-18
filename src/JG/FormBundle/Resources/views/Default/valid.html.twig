@@ -1,0 +1,19 @@
+<a href="{{ path('jg_form_homepage')}}">
+        Retour au formulaire
+</a>
+
+<h1>Liste des articles</h1>
+
+<hr>
+
+{% for article in articles %}
+        <p> Image : {{ article.image }}</p>
+        <h3>{{ article.titre }}</h3>
+        <p>Article : {{ article.article }}</p>
+        <p>Auteur : {{ article.auteur }}</p>
+        <p>Posté le : {{ article.date | date('d-m-Y') }}</p>
+
+        <hr>
+{% endfor %}
+
+

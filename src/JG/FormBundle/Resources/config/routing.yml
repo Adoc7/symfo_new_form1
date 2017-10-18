@@ -1,0 +1,11 @@
+jg_form_homepage:
+    path:     /
+    defaults: { _controller: JGFormBundle:Default:index }
+
+
+jg_form_valid:
+    path:     /valid
+    defaults: { _controller: JGFormBundle:Default:valid }
+
+
+

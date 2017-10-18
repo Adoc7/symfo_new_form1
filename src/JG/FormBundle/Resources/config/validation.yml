@@ -1,0 +1,7 @@
+#JG\FormBundle\Entity\Article:
+#    properties:
+#        article:
+#            - NotBlank: ~
+#        dueDate:
+#            - NotBlank: ~
+#            - Type: \DateTime

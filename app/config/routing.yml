@@ -1,0 +1,5 @@
+jg_form:
+    resource: "@JGFormBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
