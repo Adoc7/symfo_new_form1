@@ -15,6 +15,13 @@
         <p>Article : {{ article.article }}</p>
         <p>Auteur : {{ article.auteur }}</p>
         <p>Posté le : {{ article.date | date('d-m-Y') }}</p>
+        <a href="{{ path('jg_form_edit', {'id' : article.id})}}">
+                Modifier le formulaire
+        </a>
+        <br>
+        <a href="{{ path('jg_form_delete', {'id' : article.id})}}">
+                Supprimer le formulaire
+        </a>
 
         <hr>
 {% endfor %}

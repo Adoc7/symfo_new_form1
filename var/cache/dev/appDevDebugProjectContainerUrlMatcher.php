@@ -117,6 +117,16 @@ class appDevDebugProjectContainerUrlMatcher extends Symfony\Bundle\FrameworkBund
             return array (  '_controller' => 'JG\\FormBundle\\Controller\\DefaultController::validAction',  '_route' => 'jg_form_valid',);
         }
 
+        // jg_form_edit
+        if (0 === strpos($pathinfo, '/edit') && preg_match('#^/edit/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'jg_form_edit')), array (  '_controller' => 'JG\\FormBundle\\Controller\\DefaultController::editAction',));
+        }
+
+        // jg_form_delete
+        if (0 === strpos($pathinfo, '/delete') && preg_match('#^/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'jg_form_delete')), array (  '_controller' => 'JG\\FormBundle\\Controller\\DefaultController::deleteAction',));
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

@@ -85,6 +85,8 @@
   'VichUploaderBundle:Form:fields.html.twig' => __DIR__.'/../../../vendor/vich/uploader-bundle/Resources/views/Form/fields.html.twig',
   'JGFormBundle:Default:index.html.twig' => __DIR__.'/../../../src/JG/FormBundle/Resources/views/Default/index.html.twig',
   'JGFormBundle:Default:valid.html.twig' => __DIR__.'/../../../src/JG/FormBundle/Resources/views/Default/valid.html.twig',
+  'JGFormBundle:Default:edit.html.twig' => __DIR__.'/../../../src/JG/FormBundle/Resources/views/Default/edit.html.twig',
+  'JGFormBundle:Default:delete.html.twig' => __DIR__.'/../../../src/JG/FormBundle/Resources/views/Default/delete.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig',
   'WebProfilerBundle:Profiler:base_js.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/base_js.html.twig',
   'WebProfilerBundle:Profiler:info.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/info.html.twig',
@@ -120,8 +122,4 @@
   'WebProfilerBundle:Collector:translation.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/translation.html.twig',
   'WebProfilerBundle:Collector:twig.html.twig' => __DIR__.'/../../../vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Collector/twig.html.twig',
   '::base.html.twig' => __DIR__.'/../../../app/Resources/views/base.html.twig',
-  ':post:new.html.twig' => __DIR__.'/../../../app/Resources/views/post/new.html.twig',
-  ':post:index.html.twig' => __DIR__.'/../../../app/Resources/views/post/index.html.twig',
-  ':post:show.html.twig' => __DIR__.'/../../../app/Resources/views/post/show.html.twig',
-  ':post:edit.html.twig' => __DIR__.'/../../../app/Resources/views/post/edit.html.twig',
 );

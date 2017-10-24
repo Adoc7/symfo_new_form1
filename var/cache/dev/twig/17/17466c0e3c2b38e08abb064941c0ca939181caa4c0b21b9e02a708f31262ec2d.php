@@ -15,11 +15,11 @@ class __TwigTemplate_ff435f0b96446a55f0f5c0c384170b9e17345251b3a67d61bcb52c7c440
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_70645118154a423ca92106b6c457292a2485351c37878c15d125289d76eeb64a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_70645118154a423ca92106b6c457292a2485351c37878c15d125289d76eeb64a->enter($__internal_70645118154a423ca92106b6c457292a2485351c37878c15d125289d76eeb64a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "JGFormBundle:Default:valid.html.twig"));
+        $__internal_cf187b8efa94b4700bde0d8854d95dd5def1bae6e52817070a0dd8489433fc5b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_cf187b8efa94b4700bde0d8854d95dd5def1bae6e52817070a0dd8489433fc5b->enter($__internal_cf187b8efa94b4700bde0d8854d95dd5def1bae6e52817070a0dd8489433fc5b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "JGFormBundle:Default:valid.html.twig"));
 
-        $__internal_fedb8e7bb779c95f6ff4463416baa153fb5cc48fe030bd2476c7052c1e6d51b9 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_fedb8e7bb779c95f6ff4463416baa153fb5cc48fe030bd2476c7052c1e6d51b9->enter($__internal_fedb8e7bb779c95f6ff4463416baa153fb5cc48fe030bd2476c7052c1e6d51b9_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "JGFormBundle:Default:valid.html.twig"));
+        $__internal_2592314c3f17ed6b2893bd87ff282e633d2d0628274e4f68b43d0c9f11be33a7 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_2592314c3f17ed6b2893bd87ff282e633d2d0628274e4f68b43d0c9f11be33a7->enter($__internal_2592314c3f17ed6b2893bd87ff282e633d2d0628274e4f68b43d0c9f11be33a7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "JGFormBundle:Default:valid.html.twig"));
 
         // line 1
         echo "<a href=\"";
@@ -62,6 +62,19 @@ class __TwigTemplate_ff435f0b96446a55f0f5c0c384170b9e17345251b3a67d61bcb52c7c440
             // line 17
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["article"], "date", array()), "d-m-Y"), "html", null, true);
             echo "</p>
+        <a href=\"";
+            // line 18
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("jg_form_edit", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
+            echo "\">
+                Modifier le formulaire
+        </a>
+        <br>
+        <a href=\"";
+            // line 22
+            echo twig_escape_filter($this->env, $this->env->getExtension('Symfony\Bridge\Twig\Extension\RoutingExtension')->getPath("jg_form_delete", array("id" => $this->getAttribute($context["article"], "id", array()))), "html", null, true);
+            echo "\">
+                Supprimer le formulaire
+        </a>
 
         <hr>
 ";
@@ -69,15 +82,15 @@ class __TwigTemplate_ff435f0b96446a55f0f5c0c384170b9e17345251b3a67d61bcb52c7c440
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 21
+        // line 28
         echo "
 
 ";
         
-        $__internal_70645118154a423ca92106b6c457292a2485351c37878c15d125289d76eeb64a->leave($__internal_70645118154a423ca92106b6c457292a2485351c37878c15d125289d76eeb64a_prof);
+        $__internal_cf187b8efa94b4700bde0d8854d95dd5def1bae6e52817070a0dd8489433fc5b->leave($__internal_cf187b8efa94b4700bde0d8854d95dd5def1bae6e52817070a0dd8489433fc5b_prof);
 
         
-        $__internal_fedb8e7bb779c95f6ff4463416baa153fb5cc48fe030bd2476c7052c1e6d51b9->leave($__internal_fedb8e7bb779c95f6ff4463416baa153fb5cc48fe030bd2476c7052c1e6d51b9_prof);
+        $__internal_2592314c3f17ed6b2893bd87ff282e633d2d0628274e4f68b43d0c9f11be33a7->leave($__internal_2592314c3f17ed6b2893bd87ff282e633d2d0628274e4f68b43d0c9f11be33a7_prof);
 
     }
 
@@ -93,7 +106,7 @@ class __TwigTemplate_ff435f0b96446a55f0f5c0c384170b9e17345251b3a67d61bcb52c7c440
 
     public function getDebugInfo()
     {
-        return array (  73 => 21,  63 => 17,  59 => 16,  55 => 15,  51 => 14,  46 => 13,  44 => 12,  41 => 10,  37 => 9,  25 => 1,);
+        return array (  86 => 28,  74 => 22,  67 => 18,  63 => 17,  59 => 16,  55 => 15,  51 => 14,  46 => 13,  44 => 12,  41 => 10,  37 => 9,  25 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -123,6 +136,13 @@ class __TwigTemplate_ff435f0b96446a55f0f5c0c384170b9e17345251b3a67d61bcb52c7c440
         <p>Article : {{ article.article }}</p>
         <p>Auteur : {{ article.auteur }}</p>
         <p>Posté le : {{ article.date | date('d-m-Y') }}</p>
+        <a href=\"{{ path('jg_form_edit', {'id' : article.id})}}\">
+                Modifier le formulaire
+        </a>
+        <br>
+        <a href=\"{{ path('jg_form_delete', {'id' : article.id})}}\">
+                Supprimer le formulaire
+        </a>
 
         <hr>
 {% endfor %}
